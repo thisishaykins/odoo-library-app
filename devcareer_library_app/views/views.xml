@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <!-- Library ~ Books -->
+    <!-- Tree View -->
+    <record id="view_library_books_tree" model="ir.ui.view">
+        <field name="name">library.books.tree</field>
+        <field name="model">library.books</field>
+        <field name="arch" type="xml">
+            <tree string="Library Books">
+                <field name="name"/>
+                <field name="author_id"/>
+                <field name="isbn"/>
+                <field name="category"/>
+                <field name="available"/>
+                <field name="publication_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_library_books_form" model="ir.ui.view">
+        <field name="name">library.books.form</field>
+        <field name="model">library.books</field>
+        <field name="arch" type="xml">
+            <form string="Create Librrary Book">
+                <sheet>
+                    <group name="details" string="Detail">
+                        <field name="name"/>
+                        <field name="isbn"/>
+                        <field name="author_id"/>
+                        <field name="category"/>
+                    </group>
+
+                    <group name="status" string="Status and Date">
+                        <field name="available"/>
+                        <field name="publication_date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_library_books_search" model="ir.ui.view">
+        <field name="name">library.books.search</field>
+        <field name="model">library.books</field>
+        <field name="arch" type="xml">
+            <search string="Search Library">
+                <field name="name"/>
+                <field name="author_id"/>
+            </search>
+        </field>
+    </record>
+
+
+    <!-- Library ~ Category -->
+    <!-- Tree View -->
+    <record id="view_library_category_tree" model="ir.ui.view">
+        <field name="name">library.category.tree</field>
+        <field name="model">library.category</field>
+        <field name="arch" type="xml">
+            <tree string="Library Category">
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_library_category_form" model="ir.ui.view">
+        <field name="name">library.category.form</field>
+        <field name="model">library.category</field>
+        <field name="arch" type="xml">
+            <form string="Create Category">
+                <sheet>
+                    <group name="details" string="Detail">
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>                   
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_library_category_search" model="ir.ui.view">
+        <field name="name">library.category.search</field>
+        <field name="model">library.category</field>
+        <field name="arch" type="xml">
+            <search string="Search Library">
+                <field name="name"/>
+                <field name="description"/>
+            </search>
+        </field>
+    </record>
+
+</odoo>
+

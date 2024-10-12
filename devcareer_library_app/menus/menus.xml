@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <!-- Main Menu for Library Books -->
+    <menuitem id="menu_library_app" name="Library App" sequence="10"/>
+
+    <!-- App Menu for Library -->
+    <menuitem id="menu_library" name="Library" parent="menu_library_app" sequence="10"/>
+    
+    <!-- Menu item for Library Books -->
+    <menuitem id="menu_library_books" name="Library Books" parent="menu_library_app" action="action_library_books" sequence="11"/>
+    
+    <!-- Menu item for Library Category -->
+    <menuitem id="menu_library_category" name="Library Category" parent="menu_library_app" action="action_library_category" sequence="12"/>
+</odoo>
+

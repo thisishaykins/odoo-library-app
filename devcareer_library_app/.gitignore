@@ -1,0 +1,9 @@
+build
+*.pyc
+*.bak
+
+# workspaces 
+*.code-workspace
+
+# rsc folders
+/rsc

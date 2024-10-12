@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Library Books Action -->
+    <record id="action_library_books" model="ir.actions.act_window">
+        <field name="name">Library Book</field>
+        <field name="res_model">library.books</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_library_books_tree"/>
+    </record>
+
+    <!-- Library Category Action -->
+    <record id="action_library_category" model="ir.actions.act_window">
+        <field name="name">Library Category</field>
+        <field name="res_model">library.category</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_library_category_tree"/>
+    </record>
+
+</odoo>

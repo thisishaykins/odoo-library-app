@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Library Books - User Access -->
+        <record id="access_model_library_books_user" model="ir.model.access">
+            <field name="name">library.books</field>
+            <field name="model_id" ref="model_library_books"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+         <!-- Library Category - User Access -->
+        <record id="access_model_library_category_user" model="ir.model.access">
+            <field name="name">library.category</field>
+            <field name="model_id" ref="model_library_category"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+    </data>
+</odoo>
